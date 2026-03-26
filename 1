@@ -1,0 +1,45 @@
+=============================================================================
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+print(4== 5)
+x=4<5
+print(x,type(x))
+print(bool(' '))
+print(bool(0))
+data = [1, 0, -2.8, 0.0, "hello", "0", "", " ", 'False', False]
+
+for value in data:
+    print(bool(value), type(value))
+print("apple"=='apple')
+
+
+count=0
+while count<3:
+    print(f"{count}!")
+    count+=1
+
+for i in range(4):
+    print(i)
+print('------------')
+
+year = int(input())
+if year % 4 == 0:
+    print("yes")
+=============================================================================
+
+
+
+num=0
+for i in range(3,100,3):
+    num+=i
+print(num)
+
+for i in range(4):
+    print("Row",i)
+    for j in range(1,11):
+        print(i*10+j,end=" ")
+    print("\n")
