@@ -1,0 +1,45 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr 30 15:13:31 2026
+
+@author: scyjw21
+"""
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+time=['May1', 'May2', 'May3', 'May4']
+temerature_high=[22.5, 24, 23.5, 25]
+temerature_low=[7, 11, 13, 15]
+plt.scatter(time, temerature_high)
+
+plt.scatter(time, temerature_low)
+plt.plot(time, temerature_high, label='hige')
+plt.plot(time, temerature_low, label='low')
+plt.legend()
+plt.xlabel('UNNC holiday')
+plt.ylabel('Temerature(C)')
+plt.title('Tem')
+plt.show()
+
+
+
+plt.xticks(rotation=45)
+lesson=['Note 7', 'HW 7', 'Solution', 'Coursework', 'Note 8', 'HW 8', 'Solution 8']
+number=[177, 134, 16, 216, 160, 112, 5]
+
+plt.bar(lesson, number, color='blue')
+plt.xlabel('Course material')
+plt.ylabel('Number of viewed uesrs')
+plt.title('students engagement')
+plt.show()
+
+
+x=np.linspace(-10,10,200)
+y=np.sin(x)/x
+plt.plot(x, y, label='$f(x)$', linewidth=2, color='blue', linestyle='--')
+plt.legend()
+plt.xlabel('x')
+plt.ylabel('$f(x)$')
+plt.grid()#0.5 transparency?????
